@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Control Example</title>
+  <!-- FontAwesome for microphone icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Include the Annyang voice recognition library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <!-- Include the voice_control.js script -->
+  <script src="voice_control.js"></script>
+  <style>
+    .interactive {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #000;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .active {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- The toggle button and status will be created by voice_control.js -->
+  </header>
+
+  <main>
+    <h1>Voice-Controlled Interactive Elements</h1>
+
+    <!-- Interactive elements (buttons, links, inputs) -->
+    <button class="interactive">Button 1</button>
+    <a href="#" class="interactive">Link 1</a>
+    <input type="text" class="interactive" placeholder="Input field">
+    <button class="interactive">Button 2</button>
+
+    <!-- Voice control feedback -->
+    <div id="feedback" style="margin-top: 20px; font-size: 16px; color: green;"></div>
+  </main>
+
+  <footer>
+    <p>Voice control demo for navigating and interacting with elements.</p>
+  </footer>
+</body>
+</html>
